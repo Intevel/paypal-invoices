@@ -1,7 +1,7 @@
 const request = require("request");
 const fetch = require("node-fetch");
 const config = require("../config.json");
-
+const fs = require("fs")
 let APIToken = null;
 
 class PayPalInvoices {
@@ -116,9 +116,20 @@ class PayPalInvoices {
 			},
 		});
 		const data = await res.text()
+
 		//console.log(data)
 		if (!res.ok) throw `Error: ${res.statusText}`;
+		let t = "",
+			i = [];
+		for (let n = 0; n < data.length; n++) "\n" === data[n] ? ((t = t.replace("\r", "")) && i.push(t), t = "") : t += data[n];
+		i.splice(0, 3);
+		let o = i[0];
 		console.log(data)
+		console.log(o)
+		let c = Buffer.from(o, "base64")
+		fs.writeFileSync('image.png', c, {
+			encoding: "binary"
+		});
 		return data;
 
 	}
