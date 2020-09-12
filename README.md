@@ -39,18 +39,12 @@ async function init() {
 init();
 ```
 
-# Features
-✔️ Strictly written in TypeScript  
-✔️ Lightweight  
-✔️ Fully supports the Discord API  
+---
+![Features](https://s12.directupload.net/images/200907/9m8qldwi.png)
+- **API Authorization** *(Get Api Token)*
+- **Manage Invoices** (Create, Delete, and more)
+- **Create QR-Codes** (Invoice QR-Codes which you can scan and then pay)
 
-## Coming Features
-☄️ Fully extendable plugins API  
-☄️ Additional utilities  
-☄️ CLI generator for new projects  
-☄️ Custom ESLint configuration  
 
-# Optional Libraries
-There are multiple optional libraries which could be installed in addition to node-discord to improve performance.
-- **erlpack** - Provides fast encoding and decoding for WebSocket payloads.
-- **zlib-sync** - Compresses and decompresses WebSocket payloads before attempting to parse them.
+---
+
