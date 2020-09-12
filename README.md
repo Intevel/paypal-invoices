@@ -22,7 +22,7 @@ $ git clone https://github.com/Intevel/paypal-invoices
 $ cd paypal-invoices
 ```
 
-## Quick Code Example
+![Getting started](https://s12.directupload.net/images/200912/4awasu66.png)
 Here is a short code example to initialize a Invoice, all invoice configuration is saved in a config.
 ```javascript
 const PayPalInvoices = require("./src");
