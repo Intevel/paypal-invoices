@@ -14,7 +14,7 @@
 
 # Getting Started
 You need to install [Node.JS](https://nodejs.org/en/download/)
-```js
+```
 $ git clone https://github.com/Intevel/paypal-invoices
 
 $ cd paypal-invoices
