@@ -13,7 +13,7 @@
 </p>
 
 
-![Getting started](https://s12.directupload.net/images/200912/4awasu66.png)
+![Build](https://s12.directupload.net/images/200907/5j3544ai.png)
 
 ---
 You need to install [Node.JS](https://nodejs.org/en/download/)
