@@ -14,6 +14,7 @@
 
 # Getting Started
 You need to install [Node.JS](https://nodejs.org/en/download/)
+And you need a paypal buisness account
 ```
 $ git clone https://github.com/Intevel/paypal-invoices
 
@@ -29,6 +30,7 @@ const config = require("./config.json")
 
 async function init() {
 	const token = await PayPalInvoices.getToken(config.clientID, config.secretID);
+
 	PayPalInvoices.createInvoice(token, "test@thatsfordevelopment.at", "test", "5", "1")
 	PayPalInvoices.createInvoiceQRCode(token, "INV2-SQWP-6UB6-8JEM-EXF9")
 }
