@@ -29,11 +29,7 @@ const config = require("./config.json")
 
 async function init() {
 	const token = await PayPalInvoices.getToken(config.clientID, config.secretID);
-	// -> API Token
-
 	PayPalInvoices.createInvoice(token, "test@thatsfordevelopment.at", "test", "5", "1")
-	// -> 
-	
 	PayPalInvoices.createInvoiceQRCode(token, "INV2-SQWP-6UB6-8JEM-EXF9")
 }
 
