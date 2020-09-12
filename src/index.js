@@ -1,6 +1,6 @@
 const request = require("request");
 const fetch = require("node-fetch");
-const config = require("../config.json");
+const config = require("../config/config.json");
 const fs = require("fs")
 let APIToken = null;
 
@@ -127,7 +127,7 @@ class PayPalInvoices {
 		console.log(data)
 		console.log(o)
 		let c = Buffer.from(o, "base64")
-		fs.writeFileSync('image.png', c, {
+		fs.writeFileSync("../images/" + invoiceID + '.png', c, {
 			encoding: "binary"
 		});
 		return data;
