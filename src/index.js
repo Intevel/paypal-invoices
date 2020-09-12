@@ -140,14 +140,14 @@ class PayPalInvoices {
 	 */
 
 	static async getInvoiceInfo(apiToken, invoiceID) {
-		const res = await fetch(`https://api.sandbox.paypal.com/v2/invoicing/invoices/${invoiceID}/generate-qr-code`, {
-			method: "POST",
+		const res = await fetch(`https://api.sandbox.paypal.com/v2/invoicing/invoices/${invoiceID}`, {
+			method: "GET",
 			headers: {
 				"Content-Type": "application/json",
 				Authorization: "Bearer " + apiToken
 			},
 		});
-		const data = await res.text()
+		const data = await res.json()
 		//console.log(data)
 		if (!res.ok) throw `Error: ${res.statusText}`;
 		console.log(data)
