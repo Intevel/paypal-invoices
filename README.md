@@ -21,7 +21,7 @@ $ yarn add @node-discord/core
 ```
 
 ## Quick Code Example
-Here is a short code example to initialize a Bot and connect it to the Discord gateway.
+Here is a short code example to initialize a Invoice, all invoice configuration is saved in a config.
 ```javascript
 const PayPalInvoices = require("./src");
 const config = require("./config.json")
