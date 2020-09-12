@@ -155,6 +155,27 @@ class PayPalInvoices {
 
 	}
 
+	/**
+	 * @param {string} [apiToken] - Auth Token of PayPal API
+	 * @param {string} [invoiceID] - ID of Invoice
+	 */
+
+	static async deleteInvoice(apiToken, invoiceID) {
+		const res = await fetch(`https://api.sandbox.paypal.com/v2/invoicing/invoices/${invoiceID}`, {
+			method: "DELETE",
+			headers: {
+				"Content-Type": "application/json",
+				Authorization: "Bearer " + apiToken
+			},
+		});
+		const data = await res.json()
+		//console.log(data)
+		if (!res.ok) throw `Error: ${res.statusText}`;
+		console.log(data)
+		return data;
+
+	}
+
 }
 
 module.exports = PayPalInvoices;
