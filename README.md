@@ -3,7 +3,6 @@
 <p align="center">
   <b>Inoffical</b> reverse engineered wrapper with useful functions for managing and creating paypal invoices
   This project is in no way affiliated with, authorized, maintained, sponsored or endorsed by PayPal or any of its affiliates or subsidiaries. This is an independent and unofficial software. Use at your own risk.
-
 </p>
 
 
