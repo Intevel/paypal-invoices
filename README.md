@@ -1,7 +1,7 @@
 [![paypal-invoices](https://s12.directupload.net/images/200912/re6mtglg.png)](#)
 
 <p align="center">
-  <b>Inoffical</b> wrapper to create and manage paypal invoices
+  <b>Inoffical</b> reverse engineered wrapper with useful functions for managing and creating paypal invoices
 </p>
 
 
@@ -13,11 +13,11 @@
 
 
 # Getting Started
-Install the library using NPM or Yarn:
+You need to install [Node.JS](https://nodejs.org/en/download/)
 ```
-$ npm install @node-discord/core
+$ git clone https://github.com/Intevel/paypal-invoices
 
-$ yarn add @node-discord/core
+$ cd paypal-invoices
 ```
 
 ## Quick Code Example
