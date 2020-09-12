@@ -42,7 +42,6 @@ async function init() {
 
 init();
 ```
----
 
 ---
 ![Features](https://s12.directupload.net/images/200907/9m8qldwi.png)
