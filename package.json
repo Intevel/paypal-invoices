@@ -1,0 +1,27 @@
+{
+  "name": "paypal-invoices",
+  "version": "1.0.0",
+  "description": "[![paypal-invoices](https://s12.directupload.net/images/200912/re6mtglg.png)](#)",
+  "main": "test.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Intevel/paypal-invoices.git"
+  },
+  "author": "Conner Bachmann (Exception#1949)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Intevel/paypal-invoices/issues"
+  },
+  "homepage": "https://github.com/Intevel/paypal-invoices#readme"
+}
