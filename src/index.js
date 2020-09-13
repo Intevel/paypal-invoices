@@ -98,7 +98,7 @@ class PayPalInvoices {
 
 		});
 		const invoiceDataJSON = await invoiceData.json();
-		console.log(invoiceDataJSON.detail.metadata.recipient_view_url)
+		return invoiceDataJSON.id;
 
 	}
 
