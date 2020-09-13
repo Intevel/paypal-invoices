@@ -175,7 +175,6 @@ class PayPalInvoices {
 		return data;
 
 	}
-
 }
 
 module.exports = PayPalInvoices;
